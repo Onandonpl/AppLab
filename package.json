@@ -1,0 +1,32 @@
+{
+  "name": "applab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html", 
+    "branch": "git branch -M main ",
+    "push": "git push -u origin main",
+    "build": "parcel build src/*.html -d dist --public-url ./",
+    "deploy": "npm run build && git push -u origin main && gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Onandon.pl",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.12.15",
+    "gh-pages": "latest",
+    "parcel-bundler": "1.12.3",
+    "sass": "latest",
+    "autoprefixer": "^9.7.6",
+    "postcss-modules": "^1.4.1",
+    "parcel-plugin-clean-dist": "0.0.6"
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie <= 9",
+    "last 3 versions"
+  ]
+
+}
