@@ -1,0 +1,47 @@
+.item {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  color: $basicitem-color;
+
+  &--features {
+    margin: 20px 0;
+  }
+  &--choose {
+    margin: 25px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  &--ultimate {
+    margin: 30px;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 80%;
+    }
+  }
+
+  &__title {
+    margin: 5px 0;
+    &--red {
+      color: $lightredfeatures-color;
+    }
+    &--green {
+      color: $lightgreenfeatures-color;
+    }
+    &--blue {
+      color: $lightbluefeatures-color;
+    }
+  }
+  &__subtitle {
+    max-width: 200px;
+    font-weight: 400;
+    color: $subtitle-color;
+  }
+}

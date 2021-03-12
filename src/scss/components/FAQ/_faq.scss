@@ -1,0 +1,60 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__heading {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .qusetions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .question {
+    position: relative;
+    max-width: 1000px;
+    margin: 10px 0;
+    padding: 20px 40px 20px 20px;
+    background-color: $verylightgray-color;
+    &__title {
+      font-weight: 700;
+      color: $secondary-color;
+    }
+    &__content {
+      max-height: 0;
+      max-width: 700px;
+
+      transition: 0.1s ease-out;
+      overflow: hidden;
+      color: $lightgray-color;
+      font-size: 12px;
+    }
+    &__expand {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 25px;
+      transition: 0.1s ease-in;
+    }
+  }
+  .collapsed {
+    max-height: 500px;
+    margin: 20px 0;
+
+    transition: 0.1s ease-in;
+  }
+  .rotate {
+    transition: 0.1s ease-in;
+
+    transform: rotate(45deg);
+  }
+}

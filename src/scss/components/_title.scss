@@ -1,0 +1,37 @@
+.title {
+  margin-bottom: 10px;
+
+  font-size: 26px;
+  color: $title-color;
+
+  &--features {
+    max-width: 250px;
+  }
+  &--jackpots {
+    max-width: 350px;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--designed {
+    max-width: 300px;
+  }
+  &--choose {
+    max-width: 350px;
+    text-align: center;
+  }
+  &--ultimate {
+    max-width: 250px;
+  }
+  &--pricing {
+    max-width: 490px;
+
+    text-align: center;
+  }
+  &--clients {
+    max-width: 350px;
+  }
+  &--download {
+    font-size: 36px;
+  }
+}

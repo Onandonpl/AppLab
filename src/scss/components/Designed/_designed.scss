@@ -1,0 +1,16 @@
+.designed {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    margin-right: 100px;
+    img {
+      width: 90%;
+    }
+    @media (max-width: 730px) {
+      display: none;
+    }
+  }
+}

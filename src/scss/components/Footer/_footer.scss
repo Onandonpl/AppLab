@@ -1,0 +1,27 @@
+.footer {
+  height: 50vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $darkblue-color;
+  &__menu {
+    margin: 20px 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item {
+      padding: 10px 20px;
+    }
+    &__link {
+      color: $verylightgray-color;
+    }
+  }
+  &__copyright {
+    color: $lightgray-color;
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: calc(100% - 12%);
+  height: 60px;
+  padding: 0 6%;
+  transition: 0.1s linear;
+  &__sticky {
+    padding: 5px 6%;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    background-color: #e2eaed;
+    opacity: 0.5;
+  }
+  &__sticky--visible {
+    opacity: 1;
+  }
+}

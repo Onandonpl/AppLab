@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+
+  padding-top: 100px;
+
+  background: url("../../src/images/layer5.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: 1;
+  }
+  &::after {
+    bottom: -200px;
+    background: url("../../src/images/layer6.png");
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    background: url("../../src/images/layer3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__information {
+    max-width: 500px;
+    @media (max-width: 730px) {
+      text-align: center;
+    }
+  }
+  &__rank {
+    position: relative;
+    max-width: 300px;
+    background-color: $verylightgray-color;
+    border-radius: 20px;
+    padding-left: 30px;
+    font-size: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 25px;
+      border-radius: 20px;
+
+      background-color: $primary-color;
+    }
+  }
+
+  &__phone {
+    z-index: -1;
+    margin-top: 30px;
+    @media (max-width: 930px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    @media (max-width: 730px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: clamp(1rem, 0.7692rem + 1.0256vw, 2rem);
+    color: $secondary-color;
+  }
+
+  &__subtitle {
+    max-width: 400px;
+    padding-bottom: 20px;
+    @media (max-width: 730px) {
+      max-width: 500px;
+    }
+    p {
+      color: $lightgray-color;
+    }
+  }
+}

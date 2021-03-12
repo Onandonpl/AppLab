@@ -1,0 +1,34 @@
+.subtitle {
+  max-width: 350px;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: $subtitle-color;
+  &--features {
+  }
+  &--jackpots {
+  }
+
+  &--designed {
+    margin: 20px 0;
+  }
+  &--choose {
+    max-width: 450px;
+    text-align: center;
+  }
+  &--pricing {
+    max-width: 500px;
+    text-align: center;
+  }
+  &--clients {
+    max-width: 400px;
+  }
+  &--faq {
+    max-width: 500px;
+    text-align: center;
+  }
+  &--download{
+    max-width: 500px;
+
+  }
+}

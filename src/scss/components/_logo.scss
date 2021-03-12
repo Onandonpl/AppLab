@@ -1,0 +1,12 @@
+.logo {
+  &__element {
+    font-size: 20px;
+    font-weight: 700;
+    &--orange {
+      color: $primary-color;
+    }
+    &--darkblue {
+      color: $secondary-color;
+    }
+  }
+}

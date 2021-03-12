@@ -1,2 +1,39 @@
 @import "base/reset";
 @import "base/base";
+@import "variables/variables";
+
+@import "components/wrapper";
+@import "components/logo";
+@import "components/button";
+@import "components/container";
+@import "components/title";
+@import "components/subtitle";
+@import "components/item";
+
+@import "components/Header/header";
+@import "components/Header/menu";
+@import "components/Header/navigation";
+
+@import "components/Hero/hero";
+
+@import "components/Companies/companies";
+
+@import "components/Features/features";
+
+@import "components/Jackpots/jackpots";
+
+@import "components/Designed/designed";
+
+@import "components/Choose/choose";
+
+@import "components/Ultimate/ultimate";
+
+@import "components/Pricing/pricing";
+
+@import "components/Testimonials/testimonials";
+
+@import "components/FAQ/faq";
+
+@import "components/Download/download";
+
+@import "components/Footer/footer";

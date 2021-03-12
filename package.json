@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html", 
+    "dev": "parcel src/index.html",
     "branch": "git branch -M main ",
     "push": "git push -u origin main",
     "build": "parcel build src/*.html -d dist --public-url ./",
@@ -28,5 +28,4 @@
     "not ie <= 9",
     "last 3 versions"
   ]
-
 }

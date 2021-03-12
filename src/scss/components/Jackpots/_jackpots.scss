@@ -1,0 +1,34 @@
+.jackpots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__informations {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__line {
+    height: 100px;
+    margin: 0 40px;
+    width: 1px;
+    background-color: $lightgray-color;
+    @media (max-width: 850px) {
+      display: none;
+    }
+  }
+}

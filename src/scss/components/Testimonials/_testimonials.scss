@@ -1,0 +1,91 @@
+.testimonials {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    width: 40%;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 730px) {
+      display: none;
+    }
+  }
+  &__content {
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  &__opinions {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  .client {
+    animation-duration: 0.7s;
+    animation-name: entrance;
+    &__title {
+      margin: 10px 0;
+      color: $secondary-color;
+      font-weight: 700;
+    }
+    &__review {
+      margin-bottom: 30px;
+
+      font-size: 12px;
+      color: $lightgray-color;
+    }
+    &__info {
+      display: flex;
+    }
+    &__image {
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+  }
+  &__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    span {
+      color: $buttonbgc-color;
+      font-size: 15px;
+    }
+  }
+
+  .exit {
+    animation-duration: 0.7s;
+    animation-name: exit;
+  }
+
+  @keyframes exit {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes entrance {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

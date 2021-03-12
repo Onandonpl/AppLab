@@ -1,0 +1,68 @@
+.button {
+  padding: 15px 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.2s linear;
+
+  cursor: pointer;
+
+  &-menu {
+    &__toggler {
+      display: none;
+      @media (max-width: 930px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 199;
+
+        display: block;
+
+        &.toggle .line1 {
+          transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        &.toggle .line2 {
+          transition: width 0.7s ease;
+          width: 0;
+        }
+        &.toggle .line3 {
+          transform: rotate(45deg) translate(-5px, -6px);
+        }
+        &.toggle .line {
+          background-color: $verylightgray-color;
+        }
+
+        .line {
+          width: 30px;
+          height: 3px;
+          background-color: $secondary-color;
+          margin: 5px;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  &--bgc {
+    background-color: $buttonbgc-color;
+    &:hover {
+      color: $buttonbgc-color;
+      background-color: transparent;
+    }
+  }
+  &--transparent {
+    color: $buttonbgc-color;
+    &:hover {
+      color: white;
+      background-color: $buttonbgc-color;
+    }
+  }
+  &--ultimate {
+    margin-left: 30px;
+    padding: 15px 40px;
+  }
+}
